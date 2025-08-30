@@ -1,0 +1,198 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Leandro Cooper} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(123) 456-7890} ~ 
+    {\faEnvelope\  \underline{leecooper@example.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/leecooper/}{linkedin.com/in/leecooper}}} ~
+    {\faGithub\ \underline{\href{https://github.com/leecooper29}{github.com/leecooper}}} 
+
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University}{Expected Graduation: Spring 2027}
+      {Bachelor of Computer Science | Minor in placeholder}{Location}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem{Courses: Software Engineering Practice, Applied Machine Learning, Operating Systems, Computer Architecture, Algorithms and Data Structures}
+    \resumeItemListEnd
+    \vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Landscape Company}{April 2021 – October 2022}{Landscape Laborer}{Location} 
+            \resumeItemListStart
+                \resumeItem{Mow trim sweep of each house on their biweekly schedule to ensure no overgrown grass}
+                \resumeItem{Spent many hours weeding garden beds and planting in gardens to follow the customers needs}
+                \resumeItem{Hedging and clipping tall bushes using garden clipper and electric hedgers as well as aeration of the soil for healthy landscaping}
+                \resumeItem{Trained new employees on proper mowing techniques and safety protocols while maintaining quality standards}
+            \resumeItemListEnd
+            
+        \resumeSubheading{Landscape Company}{Summer 2024}{Landscape Laborer}{Location} 
+            \resumeItemListStart
+                \resumeItem{Maintain relationships with customers to ensure satisfaction and future business opportunities}
+                \resumeItem{Provided Tick Spray to lawns to ensure pet and family safety}
+                \resumeItem{Performed lawn maintenance including mowing, aerating, and trimming for residential properties}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Portfolio Website} $|$ \emph{\href{}{Website} $|$ \href{https://github.com/leecooper29}{Source Code}}}{ReactJS $|$ TypeScript}
+            \resumeItemListStart
+                \resumeItem{Showcases many of the projects that I have completed as well as the skills I have developed using CSS and JavaScript}
+                \resumeItem{Available for download as a Github Repository with responsive design and modern UI components}
+            \resumeItemListEnd
+            \vspace{-5pt}
+            
+        \resumeProjectHeading
+            {\textbf{Custom Courses Ecommerce} $|$ \emph{\href{https://empor.ca/}{Website}}}{ReactJS $|$ TypeScript}
+            \resumeItemListStart
+                \resumeItem{Front end project that allows consumers to purchase custom courses for people in their 20's who want to learn about financial literacy skills that college does not teach}
+                \resumeItem{Customized courses written as documents in Google Drive that can be downloaded for users}
+            \resumeItemListEnd
+            \vspace{-5pt}
+            
+        \resumeProjectHeading
+            {\textbf{Uconn place Predictor} $|$ \emph{\href{}{Website} $|$ \href{}{Source Code}}}{Python}
+            \resumeItemListStart
+                \resumeItem{some placeholder or description text will go here}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-15pt}
+
+%-----------CERTIFICATES-----------
+\section{Certificates} 
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{JavaScript Algorithms and Data Structures} $|$ \emph{\href{https://www.freecodecamp.org/}{FreeCodeCamp}}}{2024}
+            \resumeItemListStart
+                \resumeItem{Completed comprehensive curriculum covering ES6, regular expressions, debugging, data structures, and algorithmic thinking}
+                \resumeItem{Built 5 certification projects demonstrating proficiency in JavaScript fundamentals and problem-solving}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Complete JavaScript Course} $|$ \emph{\href{https://www.udemy.com/}{Udemy}}}{2024}
+            \resumeItemListStart
+                \resumeItem{Mastered modern JavaScript including async/await, promises, DOM manipulation, and object-oriented programming}
+                \resumeItem{Developed multiple real-world projects including interactive web applications and games}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, C++} \\[1mm]
+     \textbf{Developer Tools}{: Git, Azure, Docker, VSCode, IntelliJ} \\[1mm]
+     \textbf{Libraries/Frameworks}{: ReactJS, SQLServer, NextJS, NodeJS} \\[1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
